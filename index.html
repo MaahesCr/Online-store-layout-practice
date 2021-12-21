@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ЭМА-17</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ctyle.css">
+    <!--<script src="js/jquery-2.2.3.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+</body>
+</html>
+
+  </head>
+  <body class="bodyCl">
+    <header class="headerCl">
+      <div class="row row1">
+
+        <div class="col-md-0	col-lg-2 red">
+        </div>
+
+        <div class="col-md-3 col-lg-2 green">
+          <h1 class="h1Head" >Бондаренко Лев <br> ЭМА-17-1</h1>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blue">
+          <form class="" action="index.html" method="post">
+            <select class="select" name="">
+              <option class="valueFonts" value="1">Ноутбуки</option>
+              <option class="valueFonts" value="2">Телефоны</option>
+              <option class="valueFonts" value="3">Компьютеры</option>
+            </select>
+            <input class="inpForm" type="text" name="" value="">
+            <button type="button" name="button" class="foundBtnn">Искать</button>
+          </form>
+        </div>
+
+        <div class="col-md-3 col-lg-2 green2">
+          <div class="">
+            <img class="imgPng" src="png/heart_100px.png" alt="">
+          </div>
+          <div class="">
+              <!-- <img class="imgPng" src="png/buying_100px.png" alt=""> -->
+              <button onclick="openK()" class="openFast korzina" type="button" name="button"><img class="imgPng" src="png/buying_100px.png" alt=""></button>
+              <div class="popup">
+                <div class="pustayK">
+                  <h1>В корзине пусто</h1>
+                  <button onclick="closeK()" class="closeBTNK" type="button" name="button">X</button>
+                </div>
+                <div class="polnayK">
+                  <h2 class="tovarK0 tovarH2"></h2>
+                  <h2 class="tovarK1 tovarH2"></h2>
+                  <h2 class="tovarK2 tovarH2"></h2>
+                  <h2 class="tovarK3 tovarH2"></h2>
+                  <h2 class="tovarK4 tovarH2"></h2>
+                  <h2 class="tovarK5 tovarH2"></h2>
+                  <h2 class="tovarK6 tovarH2"></h2>
+                  <h2 class="tovarK7 tovarH2"></h2>
+                  <h2 class="tovarK8 tovarH2"></h2>
+                  <br>
+                  <h2 class="summa tovarH2"></h2>
+                  <button class="buyBtn" type="button" name="button">Купить</button>
+                  <div class="BTNS">
+                    <button onclick="closeK()" class="closeBTNK" type="button" name="button">X</button>
+                    <div class="pusto"></div>
+                    <button onclick="clearK()" class="clearBtn" type="button" name="button">Отчистить карзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-0	col-lg-2 red">
+        </div>
+
+      </div>
+    </header>
+
+    <section class="section1">
+      <div class="row row2">
+        <div class="col-md-0	col-lg-2 red">
+        </div>
+        <div class="col-md-3	col-lg-2 menuText">
+          <!-- <h2 class="h2Menu">Главная</h2> -->
+          <a href="#" class="h2Menu">Главная</a>
+        </div>
+        <div class="col-md-1	col-lg-1">
+        </div>
+        <div class="col-md-4	col-lg-2 menuText">
+          <!-- <h2 class="h2Menu">Лидеры продаж</h2> -->
+          <a href="#" class="h2Menu">Лидеры продаж</a>
+        </div>
+        <div class="col-md-1	col-lg-1">
+        </div>
+        <div class="col-md-3	col-lg-2 menuText">
+          <!-- <h2 class="h2Menu" >Категории</h2> -->
+          <a href="#" class="h2Menu">Категории</a>
+        </div>
+        <div class="col-md-0	col-lg-2 red">
+        </div>
+      </div>
+    </section>
+
+    <div class="backShop">
+
+    <section class="sectionShop">
+
+        <div class="row row3">
+          <div class="col-md-0	col-lg-2 red">
+          </div>
+          <div class="col-md-3	col-lg-2 firstCl">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product01.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Ноутбуки</p>
+              </div>
+              <h5 class="h5Text product0Name">Ноутбук</h5>
+              <h5 class="h5Text product0Price">24 000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product0Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk0()" type="button" name="button" class="foundBtnn1 product0Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-1	col-lg-1">
+          </div>
+          <div class="col-md-3	col-lg-2">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product02.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Наушники</p>
+              </div>
+              <h5 class="h5Text product1Name">Наушники</h5>
+              <h5 class="h5Text product1Price">9000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product1Col" type="text" name="vvod1" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk1()" type="button" name="button" class="foundBtnn1 product1Buy">Купить</button>
+              </form>
+            </div>
+
+          </div>
+          <div class="col-md-1	col-lg-1">
+          </div>
+          <div class="col-md-3	col-lg-2">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product03.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Ноутбуки</p>
+              </div>
+              <h5 class="h5Text product2Name">Ноутбук</h5>
+              <h5 class="h5Text product2Price">34 000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product2Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk2()" type="button" name="button" class="foundBtnn1 product2Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-1	col-lg-2 red">
+          </div>
+        </div>
+
+    </section>
+    <section class="sectionShop">
+
+        <div class="row row3">
+          <div class="col-md-0	col-lg-2 red">
+          </div>
+          <div class="col-md-3	col-lg-2 firstCl">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product04.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Планшеты</p>
+              </div>
+              <h5 class="h5Text product3Name">Планшет</h5>
+              <h5 class="h5Text product3Price">17 000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product3Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk3()" type="button" name="button" class="foundBtnn1 product3Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-1">
+          </div>
+          <div class="col-md-3	col-lg-2">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product05.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Наушники</p>
+              </div>
+              <h5 class="h5Text product4Name">Наушники</h5>
+              <h5 class="h5Text product4Price">62 000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product4Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk4()" type="button" name="button" class="foundBtnn1 product4Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-1">
+          </div>
+          <div class="col-md-3	col-lg-2">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product06.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Ноутбуки</p>
+              </div>
+              <h5 class="h5Text product5Name">Ноутбук</h5>
+              <h5 class="h5Text product5Price">19 999₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product5Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk5()" type="button" name="button" class="foundBtnn1 product5Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-1	col-lg-2 red">
+          </div>
+        </div>
+
+    </section>
+
+    <section class="sectionShop lastShop">
+
+        <div class="row row3">
+          <div class="col-md-0	col-lg-2 red ">
+          </div>
+          <div class="col-md-3	col-lg-2 firstCl">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product07.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Телефоны</p>
+              </div>
+              <h5 class="h5Text product6Name">Телефон</h5>
+              <h5 class="h5Text product6Price">10 000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product6Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk6()" type="button" name="button" class="foundBtnn1 product6Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-1">
+          </div>
+          <div class="col-md-3	col-lg-2">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product08.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Ноутбуки</p>
+              </div>
+              <h5 class="h5Text product7Name">Ноутбук</h5>
+              <h5 class="h5Text product7Price">45 000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product7Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk7()" type="button" name="button" class="foundBtnn1 product7Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-1">
+          </div>
+          <div class="col-md-3	col-lg-2">
+            <div class="card">
+              <div class="imgShop">
+              <img class="imgProd" src="img/product09.png" alt="">
+              </div>
+              <div class="categories">
+                <p>Категория</p>
+                <p>Фотоаппараты</p>
+              </div>
+              <h5 class="h5Text product8Name">Фотоаппарат</h5>
+              <h5 class="h5Text product8Price">6000₽</h5>
+
+            </div>
+            <div class="downCard">
+              <form class="form2" action="index.html" method="post">
+                <input class="inpForm2 product8Col" type="text" name="" value="1">
+                <input class="select2" placeholder="шт" type="text" name="" value="шт">
+                <button onclick="buyFunk8()" type="button" name="button" class="foundBtnn1 product8Buy">Купить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-1	col-lg-2 red">
+          </div>
+        </div>
+
+    </section>
+    </div>
+    <footer>
+      <div class="section">
+          <div class="row">
+
+            <div class="col-2 red">
+            </div>
+
+            <div class="col-2 footText" >
+                <h3 class="footer-title">О нас</h3>
+                <p>Много разных букв для создания видимости рабочего сайта.<br> Сайт сделал Бондаренко Лев</p>
+                <ul class="footer-links">
+                  <li><a href="#"><i class="fa fa-map-marker"></i>Тут координаты</a></li>
+                  <li><a href="#"><i class="fa fa-phone"></i>8-800-555-35-35</a></li>
+                  <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+                </ul>
+              </div>
+            <div class="col-1 red">
+            </div>
+            <div class="col-2 footText">
+								<h3 class="footer-title">Категории</h3>
+								<ul class="">
+									<li><a href="#">Горячие предложения</a></li>
+									<li><a href="#">Ноутбуки</a></li>
+									<li><a href="#">Телефоны</a></li>
+									<li><a href="#">Камеры</a></li>
+									<li><a href="#">Аксессуары</a></li>
+								</ul>
+						</div>
+            <div class="col-1 red">
+            </div>
+            <div class="col-2 footText">
+                <h3 class="footer-title">Информация</h3>
+                <ul class="footer-links">
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Связться</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                  <li><a href="#">Заказы и Возвраты</a></li>
+                  <li><a href="#">Правила и Условия</a></li>
+                </ul>
+              </div>
+
+              <div class="col-2 red">
+              </div>
+
+            </div>
+          </div>
+
+    </footer>
+<script src="js/app.js"></script>
+  </body>
+</html>
